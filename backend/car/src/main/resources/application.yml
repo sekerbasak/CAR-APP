@@ -1,0 +1,22 @@
+spring:
+  main:
+    banner-mode: off
+  jpa:
+    hibernate:
+      ddl-auto: update
+      ##ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/car
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+server:
+  port: 9797
+secret:
+  key: 00b5b1c5d6a54cea0de1affee423028eb6cf8190c431801d14b301b62cb1a61e

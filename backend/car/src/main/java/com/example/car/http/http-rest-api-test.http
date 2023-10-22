@@ -1,0 +1,12 @@
+### register user
+
+POST http://localhost:9797/api/v1/auth/register
+Content-Type: application/json
+{
+    "firstname":"remzi",
+    "lastname":"ŞAHBAZ",
+    "email":"remzisahbaz@gmail.com",
+    "username":"remzisahbaz",
+    "password":"remzi123"
+}
+>{% client.global.set("auth-token",response.body.token) %}
